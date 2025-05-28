@@ -20,7 +20,7 @@ export default function Home() {
           Wanna' see how you feel inside when <b>your favorite</b> music plays?
         </h2>
 
-        <h3 className="text-lg">Let us show you what it look like.</h3>
+        <h3 className="text-lg">Let us show you what it looks like.</h3>
 
         <Link to="/app">
           <GradientAnimationButton className="font-orbitron mt-10">
