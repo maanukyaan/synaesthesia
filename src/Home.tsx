@@ -1,17 +1,12 @@
 import { Link } from "react-router";
+import Header from "./components/Header";
 import Button from "./components/ui/Button";
 
 export default function Home() {
   return (
     <div className="relative h-full w-full">
-      <header className="fixed top-0 left-0 z-[9999] flex w-full items-center justify-between rounded-b-lg border-b border-white/15 px-10 py-5 backdrop-blur-md">
-        <div className="logo flex items-center">
-          <img src="/logo.svg" alt="Logo" className="size-10" />
-          <p className="font-orbitron ml-3 text-lg uppercase select-none">
-            Syntaesthesia
-          </p>
-        </div>
-      </header>
+      <Header />
+
       <main className="relative z-10 flex h-full flex-col p-10 pt-40">
         <h1 className="font-title text-6xl leading-tight font-semibold tracking-wide uppercase">
           Tired of just <i className="font-light line-through">listening</i>
@@ -21,7 +16,7 @@ export default function Home() {
         <h2 className="font-text mt-5 mb-8 pl-1 text-lg font-light tracking-wide">
           Some feelings can't be heard. Only seen.
           <br />
-          What if your emotions had shape and color?{" "}
+          What if your emotions had shape and color?
         </h2>
 
         <Link to="/app" className="w-fit">
