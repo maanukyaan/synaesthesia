@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { Link } from "react-router";
 import Header from "./components/Header";
 import Button from "./components/ui/Button";
@@ -8,22 +9,59 @@ export default function Home() {
       <Header />
 
       <main className="relative z-10 flex h-full flex-col p-10 px-5 pt-40 lg:px-10">
-        <h1 className="font-title text-2xl leading-tight font-semibold tracking-wide uppercase lg:text-6xl">
+        <motion.h1
+          className="font-title text-2xl leading-tight font-semibold tracking-wide uppercase lg:text-6xl"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, easing: "ease-out", delay: 0.2 }}
+        >
           Tired of just <i className="font-light line-through">listening</i>
           <i>?</i> <br />
-          Maybe it's time to <b className="font-black">see</b> it.
-        </h1>
-        <h2 className="font-text mt-5 mb-8 pl-1 text-sm font-light tracking-wide lg:text-lg">
+          Maybe it's time to{" "}
+          <b className="relative inline-block font-black">
+            <motion.span
+              animate={{ opacity: [1, 0.9, 1], scale: [1, 1.05, 1] }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                repeatType: "mirror",
+                easing: "ease-in",
+              }}
+              className="text-white"
+            >
+              see
+            </motion.span>
+          </b>{" "}
+          it.
+        </motion.h1>
+
+        <motion.h2
+          className="font-text mt-5 mb-8 pl-1 text-sm font-light tracking-wide lg:text-lg"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, easing: "ease-out", delay: 0.6 }}
+        >
           Some feelings can't be heard. Only seen.
           <br />
           What if your emotions had shape and color?
-        </h2>
+        </motion.h2>
 
-        <Link to="/app" className="w-fit">
-          <Button className="text-xs lg:text-base">Experience it</Button>
-        </Link>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 1 }}
+        >
+          <Link to="/app" className="w-fit">
+            <Button className="text-xs lg:text-base">Experience it</Button>
+          </Link>
+        </motion.div>
 
-        <h3 className="absolute bottom-5 left-5 max-w-[85%] font-mono text-xs leading-relaxed text-[#ccc] lg:bottom-10 lg:left-10 lg:max-w-[45%] lg:text-base">
+        <motion.h3
+          className="absolute bottom-5 left-5 max-w-[85%] font-mono text-xs leading-relaxed text-[#ccc] lg:bottom-10 lg:left-10 lg:max-w-[45%] lg:text-base"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 2 }}
+        >
           <strong className="font-orbitron">Synaesthesia</strong> is a rare
           phenomenon where one sense involuntarily triggers another — like{" "}
           <em>seeing color when hearing music</em>. It's not imagination — it's
@@ -31,7 +69,7 @@ export default function Home() {
           to you.
           <br />
           Upload a song. Let your eyes feel the sound.
-        </h3>
+        </motion.h3>
 
         <video
           className="pointer-events-none absolute top-0 left-0 z-[-1] hidden h-full w-full object-cover opacity-70 sm:block"
