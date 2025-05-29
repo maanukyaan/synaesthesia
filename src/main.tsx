@@ -8,7 +8,7 @@ createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <Routes>
       <Route index element={<Home />} />
-      <Route path="app" element={<App />} />
+      <Route path="experience" element={<App />} />
     </Routes>
   </BrowserRouter>,
 );
