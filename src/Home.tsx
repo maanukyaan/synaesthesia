@@ -51,7 +51,7 @@ export default function Home() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 1 }}
         >
-          <Link to="/app" className="w-fit">
+          <Link to="/experience" className="w-fit">
             <Button className="text-xs lg:text-base">Experience it</Button>
           </Link>
         </motion.div>
