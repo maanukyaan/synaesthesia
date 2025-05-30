@@ -78,7 +78,10 @@ export default function Home() {
           muted
           playsInline
         >
-          <source src="/home_background.mp4" type="video/mp4" />
+          <source
+            src={`${import.meta.env.BASE_URL}/home_background.mp4`}
+            type="video/mp4"
+          />
         </video>
 
         <video
@@ -88,7 +91,10 @@ export default function Home() {
           muted
           playsInline
         >
-          <source src="/home_background_mobile.mp4" type="video/mp4" />
+          <source
+            src={`${import.meta.env.BASE_URL}/home_background_mobile.mp4`}
+            type="video/mp4"
+          />
         </video>
       </main>
     </div>

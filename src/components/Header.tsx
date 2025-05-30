@@ -37,7 +37,7 @@ export default function Header({
         }}
       >
         <motion.img
-          src="/logo.svg"
+          src={`${import.meta.env.BASE_URL}/logo.svg`}
           alt="Logo"
           className="size-8 lg:size-10"
           initial={{ scale: 0.8, rotate: -4, opacity: 0 }}
