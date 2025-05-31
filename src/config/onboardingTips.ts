@@ -29,5 +29,5 @@ export const intro = {
   title: "Ready to feel something real?",
   subtitle: "Quick tips before starting your journey:",
   callToAction: "Now… let’s see how it feels.",
-  uploadLabel: "Upload your track",
+  uploadLabel: "Let it begin. Upload your sound.",
 };
