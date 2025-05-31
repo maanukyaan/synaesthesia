@@ -5,7 +5,7 @@ import Button from "./components/ui/Button";
 
 export default function Home() {
   return (
-    <div className="relative h-full w-full">
+    <div className="relative h-full w-full bg-[url(/home_background_mobile.webp)] lg:bg-[url(/home_background.webp)] bg-cover bg-center bg-no-repeat">
       <Header />
 
       <main className="relative z-10 flex h-full flex-col p-10 px-5 pt-40 lg:px-10">
@@ -72,7 +72,7 @@ export default function Home() {
         </motion.h3>
 
         <video
-          className="pointer-events-none absolute top-0 left-0 z-[-1] hidden h-full w-full object-cover opacity-70 sm:block"
+          className="pointer-events-none absolute top-0 left-0 z-[-1] hidden h-full w-full object-cover sm:block"
           autoPlay
           loop
           muted
@@ -85,7 +85,7 @@ export default function Home() {
         </video>
 
         <video
-          className="pointer-events-none absolute top-0 left-0 z-[-1] block h-full w-full object-cover opacity-70 sm:hidden"
+          className="pointer-events-none absolute top-0 left-0 z-[-1] block h-full w-full object-cover sm:hidden"
           autoPlay
           loop
           muted

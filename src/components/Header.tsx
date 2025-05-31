@@ -58,7 +58,7 @@ export default function Header({
             easing: "ease-out",
           }}
         >
-          Syntaesthesia
+          Synaesthesia
         </motion.p>
       </motion.div>
     </motion.header>
