@@ -7,7 +7,7 @@ export interface OnboardingTip {
 }
 
 export const tips: OnboardingTip[] = [
-   {
+  {
     icon: Headphones,
     text: "Use headphones — feel every detail.",
   },
@@ -30,4 +30,5 @@ export const intro = {
   subtitle: "Quick tips before starting your journey:",
   callToAction: "Now… let’s see how it feels.",
   uploadLabel: "Let it begin. Upload your sound.",
+  weDontSaveAudioLabel: "Note: we don't save your audio on our servers.",
 };

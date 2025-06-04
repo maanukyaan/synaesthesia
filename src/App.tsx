@@ -101,6 +101,14 @@ export default function App() {
             onChange={handleUpload}
           />
         </motion.label>
+        <motion.span
+          className="mt-2 font-mono text-[10px] italic"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 3 }}
+        >
+          {intro.weDontSaveAudioLabel}
+        </motion.span>
       </main>
     </div>
   );
