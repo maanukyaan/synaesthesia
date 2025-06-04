@@ -85,7 +85,7 @@ export default function Home() {
         </video>
 
         <video
-          className="pointer-events-none absolute top-0 left-0 z-[-1] block h-full w-full object-cover sm:hidden"
+          className="pointer-events-none absolute top-0 left-0 z-[-1] block h-full w-full object-cover sm:hidden transform rotate-180"
           autoPlay
           loop
           muted
